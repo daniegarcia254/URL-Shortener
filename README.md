@@ -4,7 +4,7 @@
 
 * [Common](common) is the project that provides a minimum set of shared features for short url's.
 * [mediumCandy](mediumCandy) is the project that contains the client web app and the new feaures implemented.
-
+  * [Doc available](mediumCandy/doc) 
 
 ## Functionalities implemented:
 
