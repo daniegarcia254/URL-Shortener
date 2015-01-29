@@ -1,0 +1,120 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medium Candy | URLShortener</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/lib/uploadfile.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <!-- Alert-box: Here every alert text will be shown. -->
+    <div data-alert id="alert-box" class="alert-box alert"></div>
+    <div data-alert id="success-box" class="alert-box success"></div>
+    
+    <div class="center-row logo">
+      <img src="img/mediumcandy2.png">
+    </div>
+    
+    <div class="center-row menu-links">
+      <ul class="inline-list">
+        <li><a id="link-shortener" href="">UrlShortener</a></li>
+        <li><a id="link-csv" href="">CSV Upload</a></li>
+        <li><a id="link-branded" href="">Branded Links</a></li>
+        <li><a id="link-stats" href="">URL Stats</a></li>
+      </ul>
+    </div>
+    
+    <div id="shortener">
+      
+      <div class="center-row">
+        <div class="large-12  columns">
+          <ul class="inline-list center">
+            <form id="urlShortenerForm" name="shortenUrl">
+              <div class="row collapse">
+                <div class="small-12 columns">
+                  <input type="search" id="urlInput" class="dream-search" placeholder="Paste a link to shorten it">
+                </div>
+              </div>
+            </form>
+          </ul>
+        </div>
+      </div>
+
+      <div id="shorten-block" class="row shorten-url-block">
+      </div>
+      
+      <div class="row shortened-url-block">
+      </div>
+    </div> <!-- #shortener -->
+    
+    <div id="csv">
+      <div class="container">
+        <h1>Shorten a list of URLs at once!</h1>
+        <p>
+          You only have to use the following form to upload a <strong>CSV file</strong> that contains all the
+          URLS you want to shorten - <em>one URL per line</em> - and we will do the rest!
+        </p>
+        <p>
+          Only the <strong>valid URLs</strong> of the <strong>CSV file</strong> will be shortened for you!
+        </p>
+        
+        <div id="fileUploader">Upload</div>
+      </div>
+    </div>
+    
+    <div id="branded">
+      <div class="container">
+        <h1>Customize shortened links easily.</h1>
+        <p>
+          Tag your shortened links in an very simple way. Pick a brand and start shortening 
+          customized URLs in the blink of an eye!
+        </p>
+        
+        <form id="urlBrandedForm" name="urlBranded">
+          <div class="row collapse">
+            <div class="small-12 columns">              
+              <input type="search" id="urlBrandInput" placeholder="Paste a link to shorten it">
+              <input type="search" id="brandInput" maxlength="30"
+                     placeholder="Write a brand for your shorten link">
+              <input type="submit" style="display: none" />
+            </div>
+          </div>
+        </form>
+        
+        <div id="branded-block" class="row shorten-url-block">
+        </div>
+      </div>
+    </div>
+    
+    <div id="stats">
+      <div class="container">
+        <h1>Keep track of your URLs.</h1>
+        <p>
+          <strong>Real-time</strong> statistics of your URL's access with all information you need.
+        </p>
+        
+        <form id="urlStatsForm" name="urlStats">
+          <div class="row collapse">
+            <div class="small-12 columns">
+              <input type="search" id="urlStatsInput" placeholder="Paste a link here">
+            </div>
+          </div>
+        </form>
+        
+        <div class="row stats-url-block"></div>
+        
+      </div> <!--container -->
+    </div>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/lib/jquery.uploadfile.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

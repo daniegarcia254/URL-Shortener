@@ -1,0 +1,402 @@
+/* Medium Candy HEX code = #E2062C */
+body {
+  background: -webkit-radial-gradient(circle, #000, #121212, #000); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(circle, #000, #121212, #000); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, #000, #121212, #000); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(circle, #000, #121212, #000); /* Standard syntax */
+}
+
+/* Main containers */
+#shortener {
+}
+
+#csv {
+  display: none;
+}
+
+#branded{
+  display: none;
+}
+
+#stats{
+  display: none;
+}
+
+.container {
+  color: #FFF;
+  text-align: justify;
+  margin: 0 auto;
+  padding: 20px;
+  padding-left: 40px;
+  width: 500px;
+}
+
+.container h1 {
+  color: #fff;
+  font-size: 1.5em;
+  color: #008CBA;
+}
+
+.container p {
+  font-size: 0.9em;
+}
+
+.logo {
+  text-align: center;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+#fileUploader{
+  width: 19px;
+}
+/* Link Menu */
+.menu-links {
+  padding: 10px;
+  padding-top: 0px;
+}
+
+.menu-links ul li {
+  padding: 5px;
+}
+
+.menu-links ul li a {
+  padding: 10px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #FFF;
+}
+
+#link-shortener {
+  color: #E2062C;
+}
+
+.stats-url-block {
+  display: none;
+  margin: 0 auto;
+  width: 100%;
+  padding: 5px;
+  margin-top: 20px;
+  clear: both;
+}
+
+.stats-url-block .img-block {
+  margin: 0 auto;
+  padding: 10px;
+  margin-right: 10px;
+  float: left;
+  width: 90px;
+}
+
+.stats-url-block .details-block .owner-url{
+  padding-top: 8px;
+  font-size: 0.8em;
+  color: #E2062C;
+}
+
+.stats-url-block .details-block .target-url{
+  font-size: .85em;
+}
+
+.stats-url-block .details-block {
+  padding-top: 17px;
+  float: clear;
+  width: 100%;
+}
+
+.owner-url span {
+  font-weight: bold;
+  color: #008CBA;
+}
+
+.clicks-url{
+  font-size: 0.75em;
+  width: 66px;
+  text-align: center;
+}
+
+.clicks-url span{
+  font-weight: bold;
+}
+
+.has-tip {
+  color: #008CBA;
+}
+
+#urlStatsInput, #urlBrandInput, #brandInput {
+  letter-spacing: 0.25px;
+  font-size: 1em;
+  padding-left: 15px;
+  margin-top: 10px;
+  border-color: #008CBA;
+}
+
+/* Branded */
+#branded-block {
+  margin: 0 auto;
+}
+
+/* last shortened uri */
+.shorten-url-block {
+  /*display: none;*/
+  padding: 20px;
+  width: 500px;
+  clear: both;
+}
+
+.shorten-url-block .img-block {
+  padding: 8px;
+  float: left;
+  width: 20%;
+}
+
+.shorten-url-block .details-block {
+  padding-left: 5px;
+  float: clear;
+  width: 100%;
+}
+
+/* Shortened uris list */
+.shortened-url-block {
+  display: none;
+  padding: 5px;
+  width: 325px;
+  clear: both;
+}
+
+.shortened-url-block .img-block {
+  padding: 8px;
+  float: left;
+  width: 20%;
+}
+
+.shortened-url-block .details-block {
+  float: clear;
+  width: 100%;
+}
+
+/* last shortened uri details */
+.shortened-url {
+  font-size: 1.4em;
+  color: #008CBA;
+  /* wrapping para titulos demasiado largos */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.target-url {
+  color: #FFF;
+  font-size: 0.9em;
+  /* wrapping para titulos demasiado largos */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.target-url a {
+  color: #FFF;
+  font-size: 0.95em;
+}
+
+.target-url a:hover {
+  text-decoration: underline;
+}
+
+/* shortened uris list details */
+.shortened-url-block .shortened-url {
+  font-size: .95em;
+  color: #008CBA;
+  /* wrapping para titulos demasiado largos */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.shortened-url-block .target-url {
+  color: #FFF;
+  /* wrapping para titulos demasiado largos */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.shortened-url-block .target-url a {
+  color: #FFF;
+  font-size: 0.75em;
+}
+
+#branded-block .img-block {
+  width: 8%;
+  margin-right: 10px;
+}
+
+#branded-block .details-block {
+  width: 100%;
+}
+
+#branded-block .shortened-url {
+  font-size: 0.9em;
+}
+
+#branded-block .target-url {
+  font-size: 0.8em;
+}
+
+/* alert and success box */
+#alert-box,  #success-box{
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+/* URL Stats */
+#urlStatsForm, #urlBrandedForm {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#statsTable {
+  width: 100%;
+}
+
+#statsTable th {
+  width: 20%
+}
+
+#statsTable td {
+  width: 80%
+}
+
+/* Styles for expanding search element */
+input[type="search"].dream-search {
+  letter-spacing: 0.25px;
+  font-size: 1em;
+  width: 350px;
+  padding-left: 15px;
+  margin-top: 30px;
+}
+
+input[type="search"].dream-search:focus {
+  width: 450px;
+  transition: ease-in-out,width .35s ease-in-out;
+  border-color: #008CBA;
+}
+
+.center-row ul{
+  display: table;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 450px;
+  }
+
+  .menu-links ul li {
+    padding-top: 20px;
+  }
+
+  .menu-links ul li a {
+    padding: 0px;
+    font-size: 0.8em;
+  }  
+  
+}
+
+@media screen and (max-width: 470px) {
+  .container {
+    width: 325px;
+  }
+  
+  .menu-links ul li {
+    padding-top: 30px;
+  }
+
+  .menu-links ul li a {
+    font-size: 0.7em;
+  }
+  
+  input[type="search"].dream-search {
+    letter-spacing: 0.15px;
+    font-size: 0.9em;
+    width: 250px;
+    padding-left: 15px;
+  }
+
+  input[type="search"].dream-search:focus {
+    width: 350px;
+  }
+  
+  #alert-box, #success-box {
+    font-size: 0.7em;
+  }
+  
+  #success-box {
+    font-size: 0.7em;
+  }
+  
+  /* last shortened uri */
+  .shorten-url-block {
+    display: none;
+    padding: 5px;
+    width: 260px;
+  }
+
+  .shorten-url-block .img-block {
+    padding: 2px;
+    width: 11%;
+  }
+
+  /* Shortened uris list */
+  .shortened-url-block {
+    display: none;
+    padding: 2px;
+    width: 210px;
+    clear: both;
+  }
+
+  .shortened-url-block .img-block {
+    padding: 2px;
+    width: 8%;
+  }
+
+  /* last shortened uri details */
+  .shortened-url {
+    padding-left: 5px;
+    font-size: 0.9em;
+  }
+
+  .target-url {
+    padding-left: 5px;
+    font-size: 0.8em;
+  }
+
+  /* shortened uris list details */
+  .shortened-url-block .shortened-url {
+    font-size: .75em;
+  }
+
+  .shortened-url-block .target-url a {
+    font-size: 0.75em;
+  }
+  
+}
+  
+@media screen and (max-width: 370px) {
+  .container {
+    width: 255px;
+  }
+  
+  input[type="search"].dream-search {
+    letter-spacing: 0.05px;
+    font-size: 0.8em;
+    width: 150px;
+    padding-left: 10px;
+  }
+
+  input[type="search"].dream-search:focus {
+    width: 250px;
+  }
+}

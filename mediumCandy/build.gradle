@@ -1,0 +1,22 @@
+apply plugin: 'war'
+
+war {
+    baseName = 'medcandy'
+    version =  '1.0'
+}
+
+repositories {
+    jcenter()
+    maven { url "http://repo.spring.io/libs-snapshot" }
+}
+
+configurations {
+    providedRuntime
+}
+
+dependencies {
+   compile("org.springframework.boot:spring-boot-starter-web")
+   compile project(":common")
+	 compile 'org.springframework.hateoas:spring-hateoas:0.16.0.RELEASE'
+	 providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
+}
