@@ -1,11 +1,9 @@
 # URL-Shortener
 
-This is the shared repository for the project developed in this course.
-
 ## Projects
 
-* [Common](common) is the project that provides a minimum set of shared features.
-* [mediumCandy](mediumCandy) is the template project and the sandbox for solving blocking issues.
+* [Common](common) is the project that provides a minimum set of shared features for short url's.
+* [mediumCandy](mediumCandy) is the project that contains the client web app and the new feaures implemented.
 
 
 ## Functionalities implemented:
