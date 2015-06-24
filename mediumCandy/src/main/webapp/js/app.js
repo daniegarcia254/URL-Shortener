@@ -1,7 +1,7 @@
 /******************************************************************************
  *                    A P P   V a r i a b l e s
  *****************************************************************************/
-var SERVICE_URI = "http://localhost:8080/";
+var SERVICE_URI = "http://52.26.205.227:8080/urlshortener/";
 
 /* Alert Messages */
 var ALERT_SHORTEN_URL = "Unable to shorten that link. It is not a valid or reachable url.";
@@ -287,7 +287,7 @@ function insertShortenedUriInDOM(shortenedUri) {
 function prependLatestShortenedUriInDOM(shortenedUri) {
   var uri = $(  '<div class="shorten-url-elem">' +
                   '<div class="img-block">' +
-                    '<img src="/img/href_small.png">' +
+                    '<img src="/urlshortener/img/href_small.png">' +
                   '</div>' +
                   '<div class="details-block">' +
                     '<div class="shortened-url">' + shortenedUri.uri + '</div>' +
@@ -305,7 +305,7 @@ function prependLatestShortenedUriInDOM(shortenedUri) {
 function insertLatestShortenedUriInDOM(shortenedUri) {
   var uri = $(  '<div class="shorten-url-elem">' +
                   '<div class="img-block">' +
-                    '<img src="/img/href.png">' + 
+                    '<img src="/urlshortener/img/href.png">' + 
                   '</div>' +
                   '<div class="details-block">' +
                     '<div class="shortened-url">' + shortenedUri.uri + '</div>' +
@@ -326,7 +326,7 @@ function insertLatestShortenedUriInDOM(shortenedUri) {
 function insertStatsInDOM(statsObj) {
   var stats = $(  '<div class="shorten-url-elem">' +
             '<div class="img-block">' +
-              '<img src="/img/stats.png">' +
+              '<img src="/urlshortener/img/stats.png">' +
               '<div class="clicks-url">' +
                 '<span>' + statsObj.numClicks + '</span> clicks</div>' +
             '</div>' +
@@ -353,7 +353,7 @@ function insertStatsInDOM(statsObj) {
 function insertBrandedUriInDOM(brandedObj) {
   var branded = $(  '<div class="shorten-url-elem">' +
                       '<div class="img-block">' +
-                        '<img src="/img/href.png">' +
+                        '<img src="/urlshortener/img/href.png">' +
                       '</div>' +
                       '<div class="details-block">' +
                         '<div class="shortened-url">' + brandedObj.uri + '</div>' +
