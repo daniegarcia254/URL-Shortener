@@ -18,3 +18,8 @@ You only need go to the _mediumCandy_ directory and exec `gradle run`.
 
 Now the app will be available at `localhost:8080`
 
+
+## Build the project --> Generate WAR file to deploy on Tomcat
+You only need go to the _mediumCandy_ directory and exec `gradle war`.
+
+The .war file will be generated and saved in the _buil/libs_ folder.
