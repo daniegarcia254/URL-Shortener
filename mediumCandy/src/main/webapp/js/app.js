@@ -1,7 +1,8 @@
 /******************************************************************************
  *                    A P P   V a r i a b l e s
  *****************************************************************************/
-var SERVICE_URI = window.location.protocl + "//" + window.location.host + ":8080/urlshortener/";
+
+var SERVICE_URI =  window.location.protocol + "//" + window.location.host  + ":8080/urlshortener/";
 
 /* Alert Messages */
 var ALERT_SHORTEN_URL = "Unable to shorten that link. It is not a valid or reachable url.";
